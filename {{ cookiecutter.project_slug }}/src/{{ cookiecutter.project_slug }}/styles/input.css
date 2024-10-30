@@ -1,0 +1,93 @@
+/* @import rules must appear at the very beginning */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply container mx-auto;
+  }
+}
+
+@layer components {
+}
+
+@layer utilities {
+}
+
+/* ======================================================================== */
+/* Always include */
+/* ======================================================================== */
+/* When used without @layer, styles are always included even if not used (no three-shaking applied) */
+
+/* See Alpine.js: https://github.com/alpinejs/alpine#x-cloak */
+[x-cloak=""] {
+  display: none;
+}
+
+/* ======================================================================== */
+/* Sphinx generated content */
+/* ======================================================================== */
+div.body[role="main"] {
+  @apply mt-6 max-w-none
+    prose
+
+    prose-headings:text-blue-600
+    
+    prose-a:text-gray-500
+    hover:prose-a:text-gray-400
+
+    prose-code:text-red-600
+    prose-code:bg-slate-400
+    prose-code:rounded
+    prose-code:p-1
+    prose-code:font-normal
+    prose-code:text-xs
+    before:prose-code:content-none
+    after:prose-code:content-none
+
+    prose-pre:text-red-600
+    prose-pre:bg-slate-50 
+    prose-pre:rounded
+    prose-pre:p-2
+    prose-pre:font-normal
+    prose-pre:text-xs;
+
+  /*
+  External links
+  */
+  a[href^="http"]:after {
+    content: " Ã¢ÂÂ";
+  }
+  a.headerlink {
+    visibility: hidden;
+  }
+  h1:hover,
+  h2:hover,
+  h3:hover,
+  h4:hover,
+  h5:hover,
+  h6:hover {
+    color: #22a7f1;
+
+    a.headerlink,
+    a.headerlink,
+    a.headerlink,
+    a.headerlink,
+    a.headerlink,
+    a.headerlink {
+      visibility: visible;
+      text-decoration: none;
+      color: #22a7f1;
+      padding-left: 0.5rem;
+    }
+  }
+
+  /* Excerpt */
+  h1 + p {
+    font-weight: bold;
+    font-size: 1.25rem;
+    @apply text-gray-600;
+  }
+}

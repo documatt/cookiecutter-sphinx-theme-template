@@ -1,0 +1,15 @@
+{
+  "files.associations": {
+    // CSS files are Tailwind
+    "\\{\\{ cookiecutter.project_slug \\}\\}/**/*.css": "tailwindcss",
+    // HTML files are Jinja
+    "\\{\\{ cookiecutter.project_slug \\}\\}/**/*.html": "jinja-html",
+    "\\{\\{ cookiecutter.project_slug \\}\\}/**/*.py": "jinja-py",
+    "\\{\\{ cookiecutter.project_slug \\}\\}/**/*.toml": "jinja-toml",
+    "\\{\\{ cookiecutter.project_slug \\}\\}/**/*.json": "jinja-json"
+  },
+  // Prettier as default formatter
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // Format on save
+  "editor.formatOnSave": true
+}

@@ -1,0 +1,35 @@
+[project]
+name = "cookiecutter-sphinx-theme-template"
+version = "0.1.0"
+readme = "README.md"
+description = "A Cookiecutter template for creating a Sphinx theme."
+authors = [{ name = "Libor Jelinek", email = "liborjelinek@documatt.com" }]
+maintainers = [{ name = "Libor Jelinek", email = "liborjelinek@documatt.com" }]
+keywords = [
+    "cookiecutter",
+    "project template",
+    "scaffolding",
+    "skeleton",
+    "sphinx",
+]
+license = { file = "LICENSE" }
+classifiers = [
+    "Framework :: Sphinx",
+    "Framework :: Sphinx :: Theme",
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: MIT License",
+    "Environment :: Web Environment",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Topic :: Documentation",
+    "Topic :: Software Development :: Documentation",
+]
+
+[project.urls]
+repository = "https://github.com/documatt/cookiecutter-sphinx-theme-template"
+homepage = "https://github.com/documatt/cookiecutter-sphinx-theme-template"
+
+[tool.pytest.ini_options]
+# Recommended import mode for new projects
+addopts = ["--import-mode=importlib"]

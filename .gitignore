@@ -1,0 +1,13 @@
+### Frontend ###
+node_modules
+
+### Python ###
+.nox
+.venv
+__pycache__
+*.egg-info
+build
+_build
+
+### Misc ###
+.DS_Store

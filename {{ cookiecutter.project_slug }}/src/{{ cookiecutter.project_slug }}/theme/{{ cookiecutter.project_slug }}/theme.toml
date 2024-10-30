@@ -1,0 +1,12 @@
+[theme]
+inherit = "{{ cookiecutter.theme_inherit }}"
+stylesheets = [
+    "styles/output.css",     # build by Tailwind CSS
+]
+# Default sidebars when not modified in `html_sidebars` in `conf.py`
+sidebars = []
+# Code highlithing styles for light (default) and dark variant
+# Style names from https://pygments.org/styles/
+pygments_style = { "default" = "default" }
+
+[options]

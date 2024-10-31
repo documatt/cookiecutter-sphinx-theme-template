@@ -81,3 +81,9 @@ def preview(session):
         *autobuild_args,
         external=True,
     )
+
+
+@nox.session
+def tests(session):
+    session.install("pytest")
+    session.run("pytest")

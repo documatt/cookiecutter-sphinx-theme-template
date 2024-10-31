@@ -1,7 +1,7 @@
 {
   "project_slug": null,
   "project_version": "0.1.0",
-  "theme_inherit": ["basic", "sphinx_foundation_theme"],
+  "theme_inherit": ["basic", "sphinx_minimal_theme"],
   "ablog": false,
   "__prompts__": {
     "project_slug": "Theme name. The recommended is 'sphinx_<name>_theme', e.g. 'sphinx_my_awesome_theme'. Use only lowercase letters, numbers, and underscores.",

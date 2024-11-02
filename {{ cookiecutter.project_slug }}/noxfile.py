@@ -28,19 +28,21 @@ NPM_INSTALL = ["npm", "--prefix", f"src/{THEME_NAME}", "install"]
 NPM_BUILD = ["npm", "--prefix", f"src/{THEME_NAME}", "run", "build"]
 
 # Default sessions when only "nox" is run
-nox.options.sessions = ["build"]
+nox.options.sessions = ["build_theme", "build_docs"]
 
 nox.options.reuse_existing_virtualenvs = True
 
 
 @nox.session
-def build(session):
+def build_theme(session):
     """Build the theme."""
     # Build the theme with Node.js
     session.run(*NPM_INSTALL, external=True)
     session.run(*NPM_BUILD, external=True)
 
-    # Use theme with sample Sphinx docs
+
+def build_docs(session):
+    """Use the theme with sample Sphinx docs."""
     session.install("-e", ".")  # Install itself in editable mode
     session.run("sphinx-build", *SPHINXOPTS, external=True)
 
@@ -56,6 +58,8 @@ def clean(session):
 @nox.session
 def preview(session):
     """Build and serve the documentation and theme with automatic reload on change."""
+    build_theme(session)
+
     clean(session)
 
     session.install(

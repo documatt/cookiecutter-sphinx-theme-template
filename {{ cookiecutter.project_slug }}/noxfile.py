@@ -41,10 +41,11 @@ def build_theme(session):
     session.run(*NPM_BUILD, external=True)
 
 
+@nox.session
 def build_docs(session):
     """Use the theme with sample Sphinx docs."""
     session.install("-e", ".")  # Install itself in editable mode
-    session.run("sphinx-build", *SPHINXOPTS, external=True)
+    session.run("sphinx-build", *SPHINXOPTS)
 
 
 # To invoke other sessions, use "nox -s <session_name>[,<session_name>]"
@@ -82,12 +83,11 @@ def preview(session):
     session.run(
         "sphinx-autobuild",
         *SPHINXOPTS,
-        *autobuild_args,
-        external=True,
+        *autobuild_args
     )
 
 
 @nox.session
-def tests(session):
+def test(session):
     session.install("pytest")
     session.run("pytest")

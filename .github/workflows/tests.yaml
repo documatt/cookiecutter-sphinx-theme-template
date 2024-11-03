@@ -39,4 +39,4 @@ jobs:
           python -m pip install --user nox
 
       - name: Run tests
-        run: nox -s tests
+        run: nox -s test

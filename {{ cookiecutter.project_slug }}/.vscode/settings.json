@@ -1,1 +1,14 @@
-../../.vscode/settings.json
+{
+  "files.associations": {
+    "**/src/sphinx_*_theme/styles/**/*.css": "tailwindcss",
+    "**/src/sphinx_*_theme/theme/**/*.html": "jinja-html"
+  },
+  // Prettier as default formatter
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // Format on save
+  "editor.formatOnSave": true,
+  // Pytest support
+  "python.testing.pytestArgs": ["tests"],
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true
+}

@@ -1,12 +1,12 @@
 {
   "project_slug": null,
   "project_version": "0.1.0",
-  "theme_inherit": ["basic", "sphinx_minimal_theme"],
+  "theme_inherit": ["basic", "sphinx_null_theme"],
   "ablog": false,
   "__prompts__": {
     "project_slug": "Theme name. The recommended is 'sphinx_<name>_theme', e.g. 'sphinx_my_awesome_theme'. Use only lowercase letters, numbers, and underscores.",
     "project_version": "Initial version of your theme.",
-    "theme_inherit": "Theme parent. From which Sphinx theme your theme should inherit from? Sphinx classic is 'basic', but for 'sphinx_foundation_theme' is our recommended for modern alternative..",
-    "ablog": "Do you want to use Ablog extension for your theme?"
+    "theme_inherit": "Theme parent. From which Sphinx theme your theme should inherit from? Traditional is 'basic', but 'sphinx_null_theme' is our recommended as modern alternative.",
+    "ablog": "Do you want to support Ablog blogging extension in your theme?"
   }
 }
